@@ -1,0 +1,11 @@
+const fs = require('fs');
+
+const contenu = 'Hello Node';
+
+fs.writeFile('welcome.txt', contenu, (err) => {
+  if (err) {
+    console.error('Une erreur s\'est produite lors de la création du fichier :', err);
+  } else {
+    console.log('Le fichier "welcome.txt" a été créé avec succès.');
+  }
+});
